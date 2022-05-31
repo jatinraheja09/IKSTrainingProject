@@ -1,38 +1,54 @@
-﻿@model IEnumerable< MovieApp.Entity.UserModel>
+﻿@model IEnumerable<MovieApp.Entity.UserModel>
 @{
-    ViewData["Title"] = "Showuserdetails";
+     ViewData["Title"] = "ShowUserDetails";
 }
 
-<h1>Showuserdetails</h1>
-<hr/>
-@{<table class=" table table-bordered">
-<thead>
-<tr>
-     <th>UserId</th>
-     <th>FirstName</th>
-     <th>LirstName</th>
-     <th>Email</th>
-     <th>Mobile</th>
-</tr>
+<h1>ShowUserDetails</h1>
 
-</thead>
-<tbody>
- 
-    @foreach(var item in Model)
-    {
+<table class="table table-dark table-striped">
+    <thead>
         <tr>
-        <td>@item.UserId</td>
-         <td>@item.FirstName</td>
-          <td>@item.LastName</td>
-           <td>@item.Email</td>
-            <td>@item.Mobile</td>
-        
-        
-        
+            <th>
+                UserId
+            </th>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Mobile
+            </th>
+            <th>
+                Action-1
+            </th>
+            <th>
+                Action-2
+            </th>
         </tr>
-        
-    }
+    </thead>
+    <tbody>
+        @{
+            foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                    @item.UserId
+                    </td>
+                    <td>
+                        @item.FirstName
+                    </td>
+                    <td>@item.LastName</td>
+                    <td>@item.Email</td>
+                    <td>@item.Mobile</td>
+                    <td><a asp-action="EditUser" asp-controller="User" asp-route-UserId="@item.UserId">Edit user</a></td>
+                    <td><a asp-action="DeleteUsers" asp-controller="User" asp-route-UserId="@item.UserId">Delete User</a></td>
+                </tr>
+            }
+        }
     </tbody>
-    </table>
-}
-
+</table>

@@ -23,3 +23,16 @@ D:\MovieCoreApplication1\IKS_Training\MovieApp.Entity\obj\Debug\netcoreapp3.1\Mo
 D:\MovieCoreApplication1\IKS_Training\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.dll
 D:\MovieCoreApplication1\IKS_Training\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.pdb
 D:\MovieCoreApplication1\IKS_Training\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.genruntimeconfig.cache
+D:\MovieCoreApplication2\MovieApp.Entity\bin\Debug\netcoreapp3.1\MovieApp.Entity.deps.json
+D:\MovieCoreApplication2\MovieApp.Entity\bin\Debug\netcoreapp3.1\MovieApp.Entity.runtimeconfig.json
+D:\MovieCoreApplication2\MovieApp.Entity\bin\Debug\netcoreapp3.1\MovieApp.Entity.runtimeconfig.dev.json
+D:\MovieCoreApplication2\MovieApp.Entity\bin\Debug\netcoreapp3.1\MovieApp.Entity.dll
+D:\MovieCoreApplication2\MovieApp.Entity\bin\Debug\netcoreapp3.1\MovieApp.Entity.pdb
+D:\MovieCoreApplication2\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.csproj.AssemblyReference.cache
+D:\MovieCoreApplication2\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\MovieCoreApplication2\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.AssemblyInfoInputs.cache
+D:\MovieCoreApplication2\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.AssemblyInfo.cs
+D:\MovieCoreApplication2\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.csproj.CoreCompileInputs.cache
+D:\MovieCoreApplication2\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.dll
+D:\MovieCoreApplication2\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.pdb
+D:\MovieCoreApplication2\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.genruntimeconfig.cache

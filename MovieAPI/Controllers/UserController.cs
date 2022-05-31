@@ -18,23 +18,41 @@ namespace MovieAPI.Controllers
         {
             _userService = userService;
         }
-        [HttpGet("User")]
-        public IActionResult SelectUser()
+        [HttpGet("SelectUsers")]
+        public IActionResult SelectUsers()
         {
-            return Ok(_userService.SelectUser());
+            return Ok(_userService.selectUser());
         }
 
-        [HttpPost]
+        [HttpPost("Register")]
         public IActionResult Register(UserModel userModel)
         {
             return Ok(_userService.Register(userModel));
         }
 
-        [HttpPut]
-        public IActionResult Update([FromBody] UserModel userModel )
+        [HttpDelete("DeleteUser")]
+        public IActionResult DeleteUser(int userId)
         {
-            _userService.Update(userModel);
-            return Ok("user updated successfully");
+            return Ok(_userService.deleteUser(userId));
         }
+
+        [HttpPost("Login")]
+        public IActionResult Login(UserModel userModel)
+        {
+            return Ok(_userService.Login(userModel));
+        }
+
+        [HttpGet("findUserById")]
+        public IActionResult findUserById(int id)
+        {
+            return Ok(_userService.findUserById(id));
+        }
+
+        [HttpPut("EditUser")]
+        public IActionResult EditUser(UserModel userModel)
+        {
+            return Ok(_userService.EditUser(userModel));
+        }
+
     }
 }

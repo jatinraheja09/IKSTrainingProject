@@ -6018,11 +6018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MovieCoreApplication1\\IKS_Training\\MovieApp.Busness\\MovieApp.Business.csproj",
+      "projectUniqueName": "D:\\MovieCoreApplication2\\MovieApp.Busness\\MovieApp.Business.csproj",
       "projectName": "MovieApp.Business",
-      "projectPath": "D:\\MovieCoreApplication1\\IKS_Training\\MovieApp.Busness\\MovieApp.Business.csproj",
+      "projectPath": "D:\\MovieCoreApplication2\\MovieApp.Busness\\MovieApp.Business.csproj",
       "packagesPath": "C:\\Users\\rahej\\.nuget\\packages\\",
-      "outputPath": "D:\\MovieCoreApplication1\\IKS_Training\\MovieApp.Busness\\obj\\",
+      "outputPath": "D:\\MovieCoreApplication2\\MovieApp.Busness\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rahej\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6039,11 +6039,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\MovieCoreApplication1\\IKS_Training\\MovieApp.Entity\\MovieApp.Entity.csproj": {
-              "projectPath": "D:\\MovieCoreApplication1\\IKS_Training\\MovieApp.Entity\\MovieApp.Entity.csproj"
+            "D:\\MovieCoreApplication2\\MovieApp.Entity\\MovieApp.Entity.csproj": {
+              "projectPath": "D:\\MovieCoreApplication2\\MovieApp.Entity\\MovieApp.Entity.csproj"
             },
-            "D:\\MovieCoreApplication1\\IKS_Training\\MoviewApp.data\\MovieApp.Data.csproj": {
-              "projectPath": "D:\\MovieCoreApplication1\\IKS_Training\\MoviewApp.data\\MovieApp.Data.csproj"
+            "D:\\MovieCoreApplication2\\MoviewApp.data\\MovieApp.Data.csproj": {
+              "projectPath": "D:\\MovieCoreApplication2\\MoviewApp.data\\MovieApp.Data.csproj"
             }
           }
         }

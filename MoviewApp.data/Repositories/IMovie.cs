@@ -7,12 +7,15 @@ namespace MovieApp.Data.Repositories
 {
     public interface IMovie
     {
-        public void AddMovie(MovieModel movieModel);
-        public void UpdateMovie(MovieModel movieModel);
+        string AddMovie(MovieModel movieModel);
 
-        public void DeletMovie(int movieId);
-        public MovieModel getMovieById(int movieId);
+        string DeleteMovie(int id);
+        object SelectMovie();
 
-        IEnumerable<MovieModel> GetMovies();
+        string EditMovie(MovieModel movieModel);
+
+        public object findMovieById(int movieid);
+
+        // IEnumerable<MovieModel> GetMovies();
     }
 }

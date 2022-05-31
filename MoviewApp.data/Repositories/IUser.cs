@@ -7,11 +7,16 @@ namespace MovieApp.Data.Repositories
 {
     public interface IUser
     {
-
         string Register(UserModel userModel);
-        object Login();
-        string Update(UserModel usermodel);
-        string Delete();
+
+        string Update(UserModel userModel);
+
+        object Login(UserModel userModel);
+
+        string Delete(int id);
+
         object SelectUser();
+
+        public object findUserById(int id);
     }
 }

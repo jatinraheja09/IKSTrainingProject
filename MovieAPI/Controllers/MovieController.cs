@@ -21,36 +21,34 @@ namespace MovieAPI.Controllers
             _movieService = movieServices;
         }
 
-        [HttpPost]
+        [HttpGet("SelectMovie")]
+        public IActionResult SelectMovie()
+        {
+            return Ok(_movieService.SelectMovie());
+        }
+
+        [HttpPost("AddMovie")]
         public IActionResult AddMovie(MovieModel movieModel)
         {
-            _movieService.AddMovie(movieModel);
-            return Ok("Movie created successfuly");
+            return Ok(_movieService.AddMovie(movieModel));
         }
 
-        [HttpGet]
-        public IEnumerable<MovieModel> GetMovies()
+        [HttpDelete("DeleteMovie")]
+        public IActionResult DeleteMovie(int id)
         {
-            return _movieService.GetMovies();
-
+            return Ok(_movieService.DeleteMovie(id));
         }
 
-
-        [HttpDelete]
-        public IActionResult DeleteMovie(int movieId)
+        [HttpPut("EditMovie")]
+        public IActionResult EditMovie(MovieModel movieModel)
         {
-            _movieService.DeletMovie(movieId);
-            return Ok("Movie deleted successfully");
+            return Ok(_movieService.EditMovie(movieModel));
         }
 
-        [HttpPut]
-
-        public IActionResult UpdateMovie(MovieModel movieModel)
+        [HttpGet("findmoviebyid")]
+        public IActionResult FindMovieById(int id)
         {
-            _movieService.UpdateMovie(movieModel);
-            return Ok("Movie updated successfully");
-
+            return Ok(_movieService.FindMovieById(id));
         }
     }
 }
-

@@ -17,38 +17,58 @@ namespace MovieApp.Data.Repositories
         {
             _movieDbContext = movieDbContext;
         }
-        public void AddMovie(MovieModel movieModel)
+        public string AddMovie(MovieModel movieModel)
         {
+            string message = "";
             _movieDbContext.movieModel.Add(movieModel);
             _movieDbContext.SaveChanges();
-
+            message = "Movie Inserted Successfully..!!";
+            return message;
         }
 
-        public void DeletMovie(int movieId)
+        public object SelectMovie()
         {
-           var movie = _movieDbContext.movieModel.Find(movieId);
-            _movieDbContext.movieModel.Remove(movie);
+            List<MovieModel> movieList = _movieDbContext.movieModel.ToList();
+            return movieList;
+        }
+
+        public string DeleteMovie(int MovieId)
+        {
+            string message = "";
+            var foundMovie = _movieDbContext.movieModel.Find(MovieId);
+            if (foundMovie != null)
+            {
+                _movieDbContext.movieModel.Remove(foundMovie);
+                _movieDbContext.SaveChanges();
+                message = "Movie Deleted Successfully..!!";
+                return message;
+            }
+            else
+            {
+                message = "Movie Not Found!!";
+                return message;
+            }
+        }
+        public string EditMovie(MovieModel movieModel)
+        {
+            _movieDbContext.Entry(movieModel).State = EntityState.Modified;
             _movieDbContext.SaveChanges();
+            return "Movie Updated Successfully...!!";
         }
 
-        public MovieModel GetMovieById(int movieId)
+        public object findMovieById(int movieid)
         {
-           return _movieDbContext.movieModel.Find(movieId);
+            MovieModel foundmovieModel = _movieDbContext.movieModel.Find(movieid);
+            if (foundmovieModel != null)
+            {
+                return foundmovieModel;
+            }
+            else
+            {
+                return "User Not Found";
+            }
         }
 
-        public MovieModel getMovieById(int movieId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<MovieModel> GetMovies()
-        {
-            return _movieDbContext.movieModel.ToList();
-        }
-
-        public void UpdateMovie(MovieModel movieModel)
-        {
-           _movieDbContext.Entry(movieModel).State = EntityState.Modified;
-        }
     }
+
 }

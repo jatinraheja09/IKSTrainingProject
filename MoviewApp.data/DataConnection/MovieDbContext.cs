@@ -9,12 +9,17 @@ namespace MovieApp.Data.DataConnection
 {
     public class MovieDbContext : DbContext
     {
+       // internal object theatreModel;
+
         public MovieDbContext(DbContextOptions<MovieDbContext> options):base(options)
         {
 
         }
         public DbSet<UserModel> userModel { get; set; }
         public DbSet<MovieModel> movieModel { get; set; }
+        public DbSet<TheatreModel> theatreModel { get; set; }
+        public DbSet<ShowMovieTime> MovieTime { get; set; }
+
 
     }
 }
