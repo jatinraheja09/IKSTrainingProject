@@ -441,5 +441,9 @@ D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Theatre
 D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Theatre\ShowTheatreDetails.cshtml.g.cs
 D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Theatre\DeleteTheatreById.cshtml.g.cs
 D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Theatre\EditTheatreById.cshtml.g.cs
-D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\MovieTime\AddMovieTime.cshtml.g.cs
-D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\MovieTime\ShowAllMovieShow.cshtml.g.cs
+D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\MovieShowTime\ShowMovieTime.cshtml.g.cs
+D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\MovieShowTime\InsertMovieShowTimes.cshtml.g.cs
+D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\MovieShowTime\UpdateMovieshowTimes.cshtml.g.cs
+D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\MovieShowTime\DeleteMovieshowTimes.cshtml.g.cs
+D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Booking\BookingReg.cshtml.g.cs
+D:\MovieCoreApplication2\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Booking\GetBookings.cshtml.g.cs

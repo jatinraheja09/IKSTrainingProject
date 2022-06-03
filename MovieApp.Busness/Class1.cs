@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MovieApp.Busness
+﻿namespace MovieApp.Busness
 {
     public class Class1
     {

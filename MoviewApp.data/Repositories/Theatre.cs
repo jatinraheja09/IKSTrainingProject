@@ -44,19 +44,7 @@ namespace MovieApp.Data.Repositories
 
             }
 
-            object FindTheatreById(int theatreId)
-            {
-                var foundTheatre = _movieDbContext.theatreModel.Find(theatreId);
-                if (foundTheatre! == null)
-                {
-                    return foundTheatre;
-                }
-                else
-                {
-                    return "Theatre not found !!";
-                }
-            }
-
+          
 
 
 
@@ -64,7 +52,16 @@ namespace MovieApp.Data.Repositories
 
         public object FindTheatreById(int theatreId)
         {
-            throw new NotImplementedException();
+            var foundTheatre = _movieDbContext.theatreModel.Find(theatreId);
+            if (foundTheatre! == null)
+            {
+                return foundTheatre;
+            }
+            else
+            {
+                return "Theatre not found !!";
+            }
+
         }
 
         public object SelectTheatre()

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MoviewApp.data
+﻿namespace MoviewApp.data
 {
     public class Class1
     {

@@ -16,7 +16,7 @@ using MovieApp.Data.Repositories;
 using MovieApp.Data;
 using MovieApp.Data.DataConnection;
 using Microsoft.OpenApi.Models;
-using MovieApp.Business.Services;
+
 
 namespace MovieAPI
 {
@@ -40,8 +40,10 @@ namespace MovieAPI
             services.AddTransient<MovieServices, MovieServices>();
             services.AddTransient<ITheatre, Theatre>();
             services.AddTransient<TheatreService, TheatreService>();
-            services.AddTransient<IMovieTime, MovieTime>();
-            services.AddTransient<MovieTimeService, MovieTimeService>();
+            services.AddTransient<IMovieShowTime, MovieShowTime>();
+            services.AddTransient<MovieShowTimeService, MovieShowTimeService>();
+            services.AddTransient<IBooking, Booking>();
+            services.AddTransient<BookingService, BookingService>();
 
             services.AddControllers();
             //services.AddSwaggerGen();

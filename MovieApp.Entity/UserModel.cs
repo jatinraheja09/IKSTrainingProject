@@ -10,7 +10,7 @@ namespace MovieApp.Entity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int UserId { get; set; }
+        public int UserId { get; set; }//properties
         public String FirstName { get; set; }
         public String LastName { get; set; }
         public String Email { get; set; }

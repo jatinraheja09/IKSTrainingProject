@@ -71,7 +71,7 @@ namespace MovieApp.UI.Controllers
         [HttpGet]
         public async Task<IActionResult> updatemovie(int id)
         {
-            string URL = _configuration["WebApiURL"] + "Movie/findmoviebyid?id=" + id;
+            string URL = _configuration["WebApiURL"] + "Movie/Findmoviebyid?id=" + id;
             using (HttpClient client = new HttpClient())
             {
                 using (var response = await client.GetAsync(URL))

@@ -11,6 +11,6 @@ namespace MovieApp.Data.Repositories
          object SelectTheatre();
         string Delete(int theatreId);
          string Update(TheatreModel theatreModel);
-        public object FindTheatreById(int theatreId);
+         object FindTheatreById(int theatreId);
     }
 }
